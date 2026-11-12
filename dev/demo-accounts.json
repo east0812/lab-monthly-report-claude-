@@ -1,0 +1,10 @@
+{
+  "_comment": "검증용 가상 계정입니다. 운영 환경에서 사용하지 마세요. (npm run local:seed 가 이 파일을 읽어 계정을 만듭니다)",
+  "accounts": [
+    { "key": "admin", "email": "admin@lab.test", "password": "Demo-Admin-2026!", "name": "김관리", "role": "admin", "active": true },
+    { "key": "emp1", "email": "lee@lab.test", "password": "Demo-Staff-2026!", "name": "이연구", "role": "employee", "active": true },
+    { "key": "emp2", "email": "park@lab.test", "password": "Demo-Staff-2026!", "name": "박개발", "role": "employee", "active": true },
+    { "key": "emp3", "email": "choi@lab.test", "password": "Demo-Staff-2026!", "name": "최설계", "role": "employee", "active": true },
+    { "key": "inactive", "email": "jung@lab.test", "password": "Demo-Staff-2026!", "name": "정퇴사", "role": "employee", "active": false }
+  ]
+}

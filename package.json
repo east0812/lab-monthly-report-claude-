@@ -1,0 +1,36 @@
+{
+  "name": "lab-monthly-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "연구소 월차보고 관리 사이트",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "node scripts/migrate.mjs",
+    "admin:create": "node scripts/create-admin.mjs",
+    "local:stack": "node dev/local-stack/start.mjs",
+    "local:seed": "node dev/seed-demo.mjs",
+    "local:verify": "node dev/verify/e2e.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "16.4.6",
+    "postgres": "^3.4.7",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "embedded-postgres": "18.6.0-beta.19",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.9.0"
+  }
+}
